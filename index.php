@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+<?php
+
+Print"<p>" . Greetings(0300) . '</p>';
+
+
+function Greetings($hour) {
+    $hours = (int) $hours;
+    {
+        if ($hour >= 0000 && $hour < 1200)
+            return 'Good Morning';
+    }
+    if ($hour >= 1200 && $hour < 1700) {
+        return 'Good Afternoon';
+    }
+    if ($hour > 1700) {
+        return'Good Evening';
+    }
+}
+?>
+
